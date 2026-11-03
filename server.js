@@ -2,7 +2,7 @@ const express = require("express");
 const OpenAI = require("openai");
 
 const app = express();
-app.use(express.json({ limit: "10kb" }));
+app.use(express.json());
 
 const ai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
